@@ -1,0 +1,80 @@
+Grup:
+-oricare ar fi x,y in G, x*y e in G
+-asociativitate: (x*y)*z=x*(y*z)
+-el neutru: e*x=x*e=x
+-el simetrice: x*y=y*x=e
++comutativitate(comutativ/abelian): x*y=y*x
+
+Inel: (R,+,*)
+-(R,+) grup comutativ
+-a(bc)=(ab)c
+-a(b+c)=ab+ac si (b+c)a=ba+ca
++ab=ba - inel comutativ
+
+R inel unitar = R are element neutru in rap cu inmultirea(1)
+
+0 - elementul nul    -->    R = 0 => R - inelul nul
+1 - elementul unitate
+
+-(Q/Z, +) nu se poate def o str de inel unitar
+
+-(Z, +, *), (Q, +, *), (R, +, *)  - inele comutative si unitare
+
+-(2Z, +, *) - inel comutativ, neunitar
+
+-(Zn, +, ·) este inel comutativ si unitar
+
+-G grup comutativ =>  (End(G), +, ?) inel unitar (inelul endomorfismelor lui G)
+
+-R - inel (unitar),  X-multime nevida => R^X este f : X -> R - inel (unitar):
+	-f,g apartin R^X ==> - (f+g)(x) = f(x) + g(x)
+		         ==> - (fg)(x) = f(x)g(x)		oricare ar fi x in X
+	-s.n. inelul functiilor definite pe X cu val in R
+	-el nul: 0 : X -> R, 0(x)=0 pt orice x in X
+	-el unitate: 1 : X -> R, 1(x)=1 pt orice x in X
+
+-R - inel (unitar) =>  (Mn(R), +, ·) este inel (unitar) si se numeste inelul matricelor patratice de ordin n peste R
+		-in general, Mn(R) nu e inel comutativ
+
+-R1, R2-inele, R=R1 x R2 ==> (R,+,*) inel, unde: -(a1, a2) + (b1, b2) = (a1 + b1, a2 + b2)
+				            - (a1, a2) · (b1, b2) = (a1b1, a2b2)
+		- se numeste produsul direct al inelelor R1,R2
+		- R inel unitar/comutativ <=> R1, R2-inele unitare/comutative
+
+-(R^R, +, ?) nu este inel
+
+-Mn(R) este comutativ (n>=2) <=> ab = 0
+
+-R inel ==> -0a = a0 = 0
+	   -a(-b) = (-a)b = -(ab) ¸si (-a)(-b) = ab
+	   - (na)b = a(nb) = n(ab)
+	   -(?i=1-m ai)(?j=1-n bj ) = ?i=1,m?j=1,n aibj
+	   -ab = ba => form bin newton
+
+
+
+
+Z4 0,1,2,3
+Z5 0,1,2,3,4
+0,0 0,1 0,2 0,3 0,4
+1,0 1,1 1,2 1,3 1,4
+2,0 2,1 2,2 2,3 2,4
+3,0 3,1 3,2 3,3 3,4
+
+El. nilpotente: (0,0), (2,0)
+El. idempotente: (0,0) , (0,1) , (1,0) , (1,1)
+
+f:Z->Z morfism de inele, f(1)=a, a in Z ==> f(x)=f(1+1+1 de x ori)=a+a+a+a de x ori=a*x, x in Z
+Z - inel unitar ==> f:Z->Z morfism de inele unitare, f(1)=1 <=> a = 1 ==> f(x)=x*1, x in Z
+f:Z->Z nu e morfism de inele unitare(f(1) nu e 1) ==> f(1)=f(1*1)=f(1)*f(1) ==> a=a*a => a idempotent in Z
+dar idempotentii lui Z sunt 0,1 deciiii ==> f(1)= 0 (f(x)=0) sau f(1)=1 (cazul anterior)
+f(x)f(y)=(ax)(ay)=a*a(xy)=a*xy=f(xy) ==> morfismul de inele unitare f:Z->Z, f(x)=x*1, x in Z
+				morfismul de inele nul f:Z->Z, f(x)=0, 0 fiind idempotent in Z
+
+
+f:Q->Q morfism de inele, f(1)=p/q, p/q in Q si p,q in Z ==> f(x)=f(1+1+1 de x ori)=p/q+p/q+p/q+p/q de x ori=p/q*x, x in Q
+Q - inel unitar ==> f:Q->Q morfism de inele unitare, f(1)=1 <=> p/q = 1 <=> p=q ==> f(x)=x*1, x in Q
+f:Q->Q nu e morfism de inele unitare(f(1) nu e 1) ==> f(1)=f(1*1)=f(1)*f(1) ==> p/q=p/q*p/q=p*p/q*q ==> p/qidempotent in Q
+dar idempotentii lui Q sunt 0, 1 deciiii ==> f(1)=0 (f(x)=0) sau f(1)=1(cazul anterior)
+f(x)f(y)=(p/q*x)(p/q*y)=p*p/q*q(xy)=p/q*xy=f(xy) ==> morfismul de inele unitare f:Q->Q, f(x)=x*1, x in Q
+					       morfismul de inele nul f:Q->Q, f(x)=0, 0 fiind idempotent in Q
